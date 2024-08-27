@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+    <title>Goku House</title>
+</head>
+<body>
+
+    <header>
+        <img src="./Imagens/title.png" class="title">
+    </header>
+
+    <div class="game-header">
+        <h1>Son Goku</h1>
+        <div class="score">Pontuação: <span id="score">0</span></div>
+    </div>
+
+    <div class="game-board">
+        <img src="./Imagens/background.png" class="home">
+        <img src="./Imagens/goku-dbz.gif" class="goku">
+        <img src="./Imagens/freeza.png" class="freeza">
+    </div>
+
+    <div class="goku"></div>
+    <div class="freeza"></div>
+    <div id="score"></div>
+    <div id="game-over" style="display: none;">
+        <img src="./Imagens/game-over.png" class="game-over-image">
+    </div>
+    <button id="restart" style="display: none;">Reiniciar</button>
+
+</body>
+</html>

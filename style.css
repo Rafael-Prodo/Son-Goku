@@ -1,0 +1,473 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #f3680c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game-header {
+    width: 50%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #26329c;
+    color: rgb(31, 30, 30);
+    font-family: Arial, sans-serif;
+}
+
+.game-board {
+    width: 50%;
+    height: 500px;
+    border-bottom: 15px solid rgb(138, 214, 76);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./Imagens/background.png');
+}
+
+.home {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+.freeza {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    animation: freeza-animation 2s infinite linear;
+}
+
+.goku {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.title {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+@keyframes freeza-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 300px;
+    }
+
+    50% {
+        bottom: 300px;
+    }
+
+    60% {
+        bottom: 300px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.score {
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: white;
+}
+
+#game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.game-over-image {
+    width: 30%;
+    position: absolute;
+    margin: 0 auto;
+}
+
+#restart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem;
+    background-color: #f3d425;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#restart:hover {
+    background-color: #f57207;
+}
+
+/* Media Queries */
+
+/* Para telas de 1400px ou maiores */
+
+@media (min-width: 1400px) {
+    header {
+        width: 50%;
+    }
+
+    .game-header {
+        width: 50%;
+    }
+
+    .game-board {
+        width: 50%;
+        height: 500px;
+    }
+
+    /* Ajuste das animações para resoluções maiores */
+    @keyframes freeza-animation {
+        from {
+            right: -100px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+
+        40% {
+            bottom: 350px;
+        }
+
+        50% {
+            bottom: 350px;
+        }
+
+        60% {
+            bottom: 350px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
+
+/* Para telas entre 1200px e 1399px */
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+    header {
+        width: 60%;
+    }
+
+    .game-header {
+        width: 60%;
+    }
+
+    .game-board {
+        width: 60%;
+        height: 450px;
+    }
+
+    /* Ajuste das animações */
+    @keyframes freeza-animation {
+        from {
+            right: -90px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+
+        40% {
+            bottom: 320px;
+        }
+
+        50% {
+            bottom: 320px;
+        }
+
+        60% {
+            bottom: 320px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
+
+/* Para telas entre 1000px e 1199px */
+
+@media (max-width: 1199px) and (min-width: 1000px) {
+    header {
+        width: 70%;
+    }
+
+    .game-header {
+        width: 70%;
+    }
+
+    .game-board {
+        width: 70%;
+        height: 400px;
+    }
+
+    /* Ajuste das animações */
+    @keyframes freeza-animation {
+        from {
+            right: -80px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+
+        40% {
+            bottom: 280px;
+        }
+
+        50% {
+            bottom: 280px;
+        }
+
+        60% {
+            bottom: 280px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
+
+/* Para telas entre 800px e 999px */
+
+@media (max-width: 999px) and (min-width: 800px) {
+    header {
+        width: 80%;
+    }
+
+    .game-header {
+        width: 80%;
+    }
+
+    .game-board {
+        width: 80%;
+        height: 350px;
+    }
+
+    /* Ajuste das animações */
+    @keyframes freeza-animation {
+        from {
+            right: -70px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+
+        40% {
+            bottom: 240px;
+        }
+
+        50% {
+            bottom: 240px;
+        }
+
+        60% {
+            bottom: 240px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
+
+/* Para telas entre 600px e 799px */
+
+@media (max-width: 799px) and (min-width: 600px) {
+    header {
+        width: 90%;
+    }
+
+    .game-header {
+        width: 90%;
+    }
+
+    .game-board {
+        width: 90%;
+        height: 300px;
+    }
+
+    /* Ajuste das animações */
+    @keyframes freeza-animation {
+        from {
+            right: -60px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+
+        40% {
+            bottom: 200px;
+        }
+
+        50% {
+            bottom: 200px;
+        }
+
+        60% {
+            bottom: 200px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
+
+/* Para telas de 599px ou menores */
+
+@media (max-width: 599px) {
+    header {
+        width: 100%;
+        height: 80px;
+    }
+
+    .game-header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .game-board {
+        width: 100%;
+        height: 250px;
+    }
+
+    .goku {
+        width: 80px;
+    }
+
+    .freeza {
+        width: 100px;
+    }
+
+    #game-over {
+        left: 60%;
+    }
+
+    .game-over-image {
+        width: 60%;
+    }
+
+    /* Ajuste das animações */
+    @keyframes freeza-animation {
+        from {
+            right: -50px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+
+        40% {
+            bottom: 160px;
+        }
+
+        50% {
+            bottom: 160px;
+        }
+
+        60% {
+            bottom: 160px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
