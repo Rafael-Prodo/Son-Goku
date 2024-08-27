@@ -40,7 +40,8 @@ O jogo foi otimizado para funcionar em várias resoluções de tela, Dependendo 
 
 # :milky_way: Contribuições
 
-Contribuições são bem-vindas! Se você tiver sugestões de melhorias, sinta-se à vontade para abrir um pull request ou uma issue.
+* Contribuições são bem-vindas! Se você tiver sugestões de melhorias, sinta-se à vontade para abrir um pull request ou uma issue.
 
 
-# :runner: [Jogar](https://rafael-prodo.github.io/Son-Goku/)
+
+# :arrow_forward: [Jogar](https://rafael-prodo.github.io/Son-Goku/)
