@@ -43,4 +43,4 @@ O jogo foi otimizado para funcionar em várias resoluções de tela, Dependendo 
 Contribuições são bem-vindas! Se você tiver sugestões de melhorias, sinta-se à vontade para abrir um pull request ou uma issue.
 
 
-[Jogar](https://rafael-prodo.github.io/Son-Goku/)
+# [Jogar](https://rafael-prodo.github.io/Son-Goku/)
