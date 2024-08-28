@@ -49,7 +49,7 @@ header {
     position: absolute;
     bottom: 0;
     width: 200px;
-    animation: freeza-animation 2s infinite linear;
+    animation: freeza-animation 1.5s infinite linear;
 }
 
 .goku {
