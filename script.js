@@ -24,8 +24,8 @@ const loop = setInterval(() => {
     let collisionFreezaWidth = 100;
 
     if (window.innerWidth <= 599) {
-        collisionGokuHeight = 40;
-        collisionFreezaWidth = 50;
+        collisionGokuHeight = 30;
+        collisionFreezaWidth = 40;
     } else if (window.innerWidth <= 799) {
         collisionGokuHeight = 60;
         collisionFreezaWidth = 70;
