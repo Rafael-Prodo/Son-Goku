@@ -441,7 +441,7 @@ h1 {
     /* Ajuste das animações */
     @keyframes freeza-animation {
         from {
-            right: -50px;
+            right: -40px;
         }
 
         to {
