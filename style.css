@@ -454,6 +454,10 @@ h1 {
             bottom: 0;
         }
 
+        20% {
+            bottom: 160px;
+        }
+
         30% {
             bottom: 160px;
         }
